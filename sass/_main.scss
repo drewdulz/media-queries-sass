@@ -1,0 +1,43 @@
+$break-mobile-min: 0px;
+$break-mobile-max: 768px;
+$break-tablet-min: 768px;
+$break-tablet-max: 1024px;
+$break-desktop-min: 1024px;
+$break-desktop-max: 1200px;
+$break-larger-desktop-min: 1200px;
+
+$mobile: "(min-width: 0px) and (max-width: 768px)";
+$tablet: "(min-width: 768px) and (max-width: 1024px)";
+$desktop: "(min-width: 1024px) and (max-width: 1200px)";
+$large-desktop: "(min-width: 1200px)";
+
+.hide-mobile {
+  @media #{$mobile} {
+    display: none;
+  }
+}
+
+.hide-tablet {
+  @media #{$tablet} {
+    display: none;
+  }
+}
+
+.hide-desktop {
+  @media #{$desktop} {
+    display: none;
+  }
+}
+
+.hide-large-desktop {
+  @media #{$large-desktop} {
+    display: none;
+  }
+}
+
+.larger-desktop {
+  display: none;
+  @media #{$large-desktop} {
+    display: block;
+  }
+}
